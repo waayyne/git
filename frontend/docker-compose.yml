@@ -11,3 +11,7 @@ services:
       - .:/app/frontend
     environment:
       - CHOKIDAR_USEPOLLING=TRUE
+  test: 
+    build: 
+      context: .
+      dockerfile: Dockerfile.dev
